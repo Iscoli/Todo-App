@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Form  from './components/Form';
+import Heading from './components/Heading';
+import Body from "./components/Body";
+import Footer from "./components/Footer";
+import {useState} from 'react';
+import { TodoListProvider } from './context/TodoContext';
+
+
+function App() { 
+  
+ 
+  
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  return <TodoListProvider> <div>
+
+      <Heading />
+      <Form />
+      <Body 
+          
+          />
+      <Footer />
+    
+      </div>
+      </TodoListProvider>
 }
 
 export default App;
